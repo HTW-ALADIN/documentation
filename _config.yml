@@ -1,14 +1,14 @@
 title: documentation
-copyright: '2023, Paul Christ'
+copyright: "2023, Paul Christ"
 author: Paul Christ
 
 execute:
   execute_notebooks: "force"
 
 html:
-  use_edit_page_button : true
+  use_edit_page_button: true
   use_repository_button: true
-  baseurl              : https://HTW-ALADIN.github.io/documentation
+  baseurl: https://HTW-ALADIN.github.io/documentation
 
 repository:
   url: https://github.com/HTW-ALADIN/documentation
@@ -16,8 +16,8 @@ repository:
 
 launch_buttons:
   binderhub_url: "https://mybinder.org"
-  colab_url    : "https://colab.research.google.com"
-  thebe        : true
+  colab_url: "https://colab.research.google.com"
+  thebe: true
 
 latex:
   latex_documents:
@@ -27,7 +27,6 @@ parse:
   myst_enable_extensions:
     - html_image
     - dollarmath
-
 
 bibtex_bibfiles:
   - bibliography.bib
