@@ -1,5 +1,4 @@
-title: documentation
-copyright: "2023, Paul Christ"
+title: ALADIN Docs
 author: Paul Christ
 
 execute:
@@ -8,6 +7,7 @@ execute:
 html:
   use_edit_page_button: true
   use_repository_button: true
+  use_issues_button: true
   baseurl: https://HTW-ALADIN.github.io/documentation
 
 repository:
@@ -21,7 +21,7 @@ launch_buttons:
 
 latex:
   latex_documents:
-    targetname: book.tex
+    targetname: aladin_docs.tex
 
 parse:
   myst_enable_extensions:
@@ -34,3 +34,17 @@ bibtex_bibfiles:
 sphinx:
   config:
     bibtex_reference_style: author_year
+    html_show_copyright: false 
+    latex_toplevel_sectioning: part
+    latex_show_pagerefs: true
+    latex_show_urls: 'footnote'
+
+
+parse:
+  myst_enable_extensions:
+    - amsmath
+    - colon_fence
+    - dollarmath
+    - linkify
+    - substitution
+    - tasklist

@@ -1,12 +1,27 @@
 format: jb-book
 
-root: chapters/00_how_to_use
+root: chapters/Intro/Intro.md
 
 options:
   numbered: 3
 
 parts:
-- caption: Markdown Cheat Sheet
-  chapters:
-    - file: chapters/01_markdown
-    - file: chapters/02_jupyter
+  - caption: Introduction
+    chapters:
+      - file: chapters/Intro/Intro.md
+      - file: chapters/Intro/Overview.md
+      - file: chapters/Intro/Glossary.md
+      - file: chapters/Assessments/Assessment.md
+      - file: chapters/Assessments/AssessmentTypes.md
+  - caption: ALADIN
+    chapters:
+      - file: chapters/ALADIN/ALADIN.md
+  - caption: CARPET
+    chapters:
+      - file: chapters/CARPET/CARPET.md
+  - caption: DJINN
+    chapters:
+      - file: chapters/DJINN/DJINN.md
+  - caption: Publications
+    chapters:
+      - file: chapters/Publications/Publications.md
