@@ -2,9 +2,6 @@ format: jb-book
 
 root: chapters/Intro/Intro.md
 
-options:
-  numbered: 3
-
 parts:
   - caption: Introduction
     chapters:
