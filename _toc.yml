@@ -1,6 +1,6 @@
 format: jb-book
 
-root: chapters/preface
+root: chapters/Preface
 
 parts:
   - caption: Introduction
