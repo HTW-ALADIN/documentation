@@ -11,7 +11,7 @@ kernelspec:
   name: python3
 ---
 
-# Introduction
+# Preface
 
 [**ALADIN**](../ALADIN/ALADIN.md) ([**A**ssessment](Glossary.md#assessment) and so**l**ution(-hint)s gener**a**tor in the fiel**d** of **I**nformatics and adjacent discipli**n**es) is a framework for generating large amounts of [assessments](Glossary.md#assessment), including their solutions and individual solution hints. [**ALADIN**](../ALADIN/ALADIN.md) ships with a set of already included [assessment types](../Assessments/AssessmentTypes.md), but also supports and strongly encourages the extension of new [assessment types](../Assessments/AssessmentTypes.md). [**ALADIN**](../ALADIN/ALADIN.md), although originally being focused on [assessments](Glossary.md#assessment) close to the domain of Computer Science, is domain independent when declaring new [assessment types](../Assessments/AssessmentTypes.md).
 
