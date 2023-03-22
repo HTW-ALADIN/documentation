@@ -1,23 +1,24 @@
 format: jb-book
 
-root: chapters/Intro/Intro.md
+root: chapters/00_how_to_use
 
 parts:
   - caption: Introduction
     chapters:
-      - file: chapters/Intro/Overview.md
-      - file: chapters/Intro/Glossary.md
-      - file: chapters/Assessments/Assessment.md
-      - file: chapters/Assessments/AssessmentTypes.md
+      - file: chapters/Intro/Intro
+      - file: chapters/Intro/Overview
+      - file: chapters/Intro/Glossary
+      - file: chapters/Assessments/Assessment
+      - file: chapters/Assessments/AssessmentTypes
   - caption: ALADIN
     chapters:
-      - file: chapters/ALADIN/ALADIN.md
+      - file: chapters/ALADIN/ALADIN
   - caption: CARPET
     chapters:
-      - file: chapters/CARPET/CARPET.md
+      - file: chapters/CARPET/CARPET
   - caption: DJINN
     chapters:
-      - file: chapters/DJINN/DJINN.md
+      - file: chapters/DJINN/DJINN
   - caption: Publications
     chapters:
-      - file: chapters/Publications/Publications.md
+      - file: chapters/Publications/Publications
