@@ -13,4 +13,11 @@ kernelspec:
 
 # Assessment
 
-... tbd
+Conceptionally an Assessment in ALADIN consists out of seperate parts. These parts are:
+
+- Assessment Type,
+- Assessment Solutions,
+- Assessment Hints,
+- Assessment Instructions and Assessment Design.
+
+An Assessment Type is a composition of individual [Assessment Generator functions](../ALADIN/ALADIN.md#assessment-generator) in a set configuration. ALADIN provides a set of already defined [Assessment Generator functions](../ALADIN/ALADIN.md#assessment-generator), but also the ability to provide custom code.
