@@ -11,9 +11,16 @@ kernelspec:
   name: python3
 ---
 
-# Assessment Types & Subject Matters
+# Assessment Type
 
-## Assessment Types
+Assessment Types in ALADIN are structured as follows:
+
+```{figure} ../../_static/images/AssessmentTypes.png
+---
+height: 400px
+name: AssessmentTypes
+---
+```
 
 ## Subject Matter
 
