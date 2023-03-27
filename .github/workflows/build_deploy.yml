@@ -24,6 +24,8 @@ jobs:
         run: |
           pip install wheel
           pip install jupyter-book
+          pip install sphinxcontrib-mermaid
+          pip install sphinxcontrib-wavedrom
 
       - name: Build the book
         run: jb build .

@@ -18,6 +18,9 @@ parts:
   - caption: DJINN
     chapters:
       - file: chapters/DJINN/DJINN
+  - caption: ALADIN Legacy-Build
+    chapters:
+      - file: chapters/ALADIN_legacy/legacy
   - caption: Publications
     chapters:
       - file: chapters/Publications/Publications
