@@ -27,15 +27,14 @@ An execution plan can be thought of as a multistep computer program, which produ
 
 ```{figure} ../../_static/images/recipe_execution_plan.jpg
 ---
-scale: 50%
-align: left
+scale: 100%
+align: center
+name: directive-fig
 ---
 Here is my figure caption!
 ```
 
 {numref}`Figure {number}: {name} <directive-fig>`
-
-![Recipe Execution Plan](../../_static/images/recipe_execution_plan.jpg)
 
 A simple analogy of an execution plan is a recipe. A recipe is a set of instructions, which describe how to prepare a certain dish. Each instruction is a step in the recipe and the result of each step is the input for the next step. The last step in the recipe produces the desired dish.
 
