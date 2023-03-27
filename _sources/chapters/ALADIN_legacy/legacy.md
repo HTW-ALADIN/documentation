@@ -1,6 +1,6 @@
 # Mermaid
 
-```mermaid
+```{mermaid}
 
     sequenceDiagram
       participant Alice
