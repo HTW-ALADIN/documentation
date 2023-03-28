@@ -7,11 +7,11 @@ parts:
     chapters:
       - file: chapters/Intro/Overview
       - file: chapters/Intro/Glossary
-      - file: chapters/Assessments/Assessment
-      - file: chapters/Assessments/AssessmentTypes
   - caption: ALADIN
     chapters:
       - file: chapters/ALADIN/ALADIN
+      - file: chapters/ALADIN/Assessments/Assessment
+      - file: chapters/ALADIN/Assessments/AssessmentTypes
   - caption: CARPET
     chapters:
       - file: chapters/CARPET/CARPET
