@@ -25,21 +25,17 @@ The Assessment Generator is the core of the ALADIN framework and is responsible 
 
 An execution plan can be thought of as a multistep computer program, which produces the desired output. In an execution plan, each node represents a computational operation or function and each edge represents the data flow between the nodes. The output of one node always acts as the input of another, where the last output in the data flow always produces the result of the execution plan.
 
+A simple analogy of an execution plan is a cooking recipe. A recipe is a set of instructions, which describe how to prepare a certain dish. Each instruction is a step in the recipe and the result of each step is the input for the next step. The last step in the recipe results in the desired dish. Such a recipe can be represented as a flow chart, as shown in {numref}`Figure {number}: {name} <cooking-recipe>`, where each cooking step is represented by a node and the ingredients bye the data flow on the edges.
+
 ```{figure} ../../_static/images/recipe_execution_plan.jpg
 ---
 scale: 100%
 align: center
-name: directive-fig
+name: cooking-recipe
 ---
-Here is my figure caption!
+Cooking recipe as a flow chart
 ```
-
-{numref}`Figure {number}: {name} <directive-fig>`
-
-A simple analogy of an execution plan is a recipe. A recipe is a set of instructions, which describe how to prepare a certain dish. Each instruction is a step in the recipe and the result of each step is the input for the next step. The last step in the recipe produces the desired dish.
 
 ### Custom Nodes
 
 If the predefined nodes are insufficient to produce the desired output, custom nodes can be added to the execution plan. The inputs and outputs of a custom node are defined by the user. The custom node can then be used in the execution plan as any other node, aslong as its interface fits into the data flow of its adjacent nodes.
-
-## Assessment Generation Configuration

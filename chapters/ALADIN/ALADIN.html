@@ -483,7 +483,6 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#custom-nodes">Custom Nodes</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assessment-generation-configuration">Assessment Generation Configuration</a></li>
 </ul>
             </nav>
         </div>
@@ -505,22 +504,18 @@ document.write(`
 <section id="execution-plan">
 <h3>Execution Plan<a class="headerlink" href="#execution-plan" title="Permalink to this heading">#</a></h3>
 <p>An execution plan can be thought of as a multistep computer program, which produces the desired output. In an execution plan, each node represents a computational operation or function and each edge represents the data flow between the nodes. The output of one node always acts as the input of another, where the last output in the data flow always produces the result of the execution plan.</p>
-<figure class="align-center" id="directive-fig">
+<p>A simple analogy of an execution plan is a cooking recipe. A recipe is a set of instructions, which describe how to prepare a certain dish. Each instruction is a step in the recipe and the result of each step is the input for the next step. The last step in the recipe results in the desired dish. Such a recipe can be represented as a flow chart, as shown in <a class="reference internal" href="#cooking-recipe"><span class="std std-numref">Figure 1: Cooking recipe as a flow chart</span></a>, where each cooking step is represented by a node and the ingredients bye the data flow on the edges.</p>
+<figure class="align-center" id="cooking-recipe">
 <a class="reference internal image-reference" href="../../_images/recipe_execution_plan.jpg"><img alt="../../_images/recipe_execution_plan.jpg" src="../../_images/recipe_execution_plan.jpg" style="width: 758.0px; height: 230.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Here is my figure caption!</span><a class="headerlink" href="#directive-fig" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Cooking recipe as a flow chart</span><a class="headerlink" href="#cooking-recipe" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p><a class="reference internal" href="#directive-fig"><span class="std std-numref">Figure 1: Here is my figure caption!</span></a></p>
-<p>A simple analogy of an execution plan is a recipe. A recipe is a set of instructions, which describe how to prepare a certain dish. Each instruction is a step in the recipe and the result of each step is the input for the next step. The last step in the recipe produces the desired dish.</p>
 </section>
 <section id="custom-nodes">
 <h3>Custom Nodes<a class="headerlink" href="#custom-nodes" title="Permalink to this heading">#</a></h3>
 <p>If the predefined nodes are insufficient to produce the desired output, custom nodes can be added to the execution plan. The inputs and outputs of a custom node are defined by the user. The custom node can then be used in the execution plan as any other node, aslong as its interface fits into the data flow of its adjacent nodes.</p>
 </section>
-</section>
-<section id="assessment-generation-configuration">
-<h2>Assessment Generation Configuration<a class="headerlink" href="#assessment-generation-configuration" title="Permalink to this heading">#</a></h2>
 </section>
 </section>
 
@@ -596,7 +591,6 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#custom-nodes">Custom Nodes</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assessment-generation-configuration">Assessment Generation Configuration</a></li>
 </ul>
   </nav></div>
 
