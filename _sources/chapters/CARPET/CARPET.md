@@ -11,6 +11,9 @@ kernelspec:
   name: python3
 ---
 
-# CARPET
+# CARPeT
 
-tbd...
+Graphical Assessment Interpretation Engine and Solution Attempt Tracker
+graphiCal Assessment interPretation engine and solution attemPt Tracker
+
+learning analytics

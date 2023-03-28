@@ -15,13 +15,6 @@ kernelspec:
 
 Assessment Types in ALADIN are structured as follows:
 
-```{figure} ../../_static/images/AssessmentTypes.png
----
-height: 400px
-name: AssessmentTypes
----
-```
-
 ## Subject Matter
 
 ### Bill Of Materials (BOM) Explosion | Gozintograph
