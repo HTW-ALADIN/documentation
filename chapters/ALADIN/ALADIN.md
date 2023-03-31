@@ -13,22 +13,22 @@ kernelspec:
 
 # Overview
 
-ALADIN ([**A**ssessment](./Intro/Glossary.md#assessment) and so**l**ution(-hint)s gener**a**tion framework in the fiel**d** of **I**nformatics and adjacent discipli**n**es) is a framework for declaratively defining and generating assessments and solutions for them. It was originally thought to be used in the context of computer science education, but is designed in a way that makes it independent of the subject matter domain.
+ALADIN ([T**a**sk](./Intro/Glossary.md#task) and so**l**ution(-hint)s gener**a**tion framework in the fiel**d** of **I**nformatics and adjacent discipli**n**es) is a framework for declaratively defining and generating tasks, solutions and solution-hints for them. It was originally thought to be used in the context of computer science education, but is designed in a way that makes it independent of the subject matter domain.
 
-```{figure} ../../_static/images/assessment_generator.jpg
+```{figure} ../../_static/images/task_generator.jpg
 ---
 scale: 100%
 align: center
 name: aladin-overview
 ---
-Configuration of the Assessment Generator
+Configuration of the Task Generator
 ```
 
-## Assessment Generator
+## Task Data Generator
 
-The Assessment Generator is a function, that can be thought of as an execution engine and takes in a configuration in the form of a directed graph of individual Assessment Generation functions to produce an Assessment according to that plan. Think SQL query plans, but for educational Assessment Generation<sup>[1](#execution-plan)</sup>. A distinct configuration of multiple Assessment Generation functions is called an [Assessment Type](../Assessments/AssessmentTypes.md).
+The Task Data Generator is a function, that can be thought of as an execution engine and takes in a configuration in the form of a directed graph of individual Task Generation functions to produce Task Data according to that plan. Think SQL query plans, but for educational Task Data Generation<sup>[1](#execution-plan)</sup>. A distinct configuration of multiple Task Generation functions is called an [Task Type](../Tasks/TaskTypes.md).
 
-The Assessment Generator is the core of the ALADIN framework and is responsible for generating Assessment Instances of a given Assessment Type and their respective solutions and hints.
+The Task Data Generator is the core of the ALADIN framework and is responsible for generating Task Instances of a given Task Type and their respective solutions and hints.
 
 ### Execution Plan
 

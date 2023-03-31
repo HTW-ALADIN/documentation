@@ -15,6 +15,8 @@ kernelspec:
 
 CARPET allows the recording of a solution attempt of an Assessment Instance by the learner within the associated Assessment Design, including all interactions.
 
-The recording of the solution attempt is done by the Assessment Design itself, which is responsible for the presentation of the Assessment Instance to the learner and the recording of the solution attempt.
+The recording of the solution attempt is done by CARPeT automatically, as each Assessment Item is
+
+The recording of the solution attempt is done by the Assessment Design Items itself, which is responsible not only for the presentation of the Assessment Instance to the learner, but also the recording of the solution attempt.
 
 ## 4R Principle

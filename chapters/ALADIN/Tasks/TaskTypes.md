@@ -11,9 +11,9 @@ kernelspec:
   name: python3
 ---
 
-# Assessment Type
+# Task Type
 
-Assessment Types in ALADIN are structured as follows:
+Task Types in ALADIN are structured as follows:
 
 ## Subject Matter
 

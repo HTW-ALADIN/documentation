@@ -13,4 +13,4 @@ kernelspec:
 
 # DJINN
 
-tbd...
+DJINN (**D**eclarative **J**oint Authoring Tool for **I**nstructional Desig**n** and Task Data Ge**n**erator Modeling)

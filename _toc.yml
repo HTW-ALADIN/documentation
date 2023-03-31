@@ -10,8 +10,8 @@ parts:
   - caption: ALADIN
     chapters:
       - file: chapters/ALADIN/ALADIN
-      - file: chapters/ALADIN/Assessments/Assessment
-      - file: chapters/ALADIN/Assessments/AssessmentTypes
+      - file: chapters/ALADIN/Tasks/Task
+      - file: chapters/ALADIN/Tasks/TaskTypes
   - caption: CARPET
     chapters:
       - file: chapters/CARPET/CARPET
