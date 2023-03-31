@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -39,8 +39,8 @@
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -72,7 +72,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="canonical" href="https://HTW-ALADIN.github.io/documentation/chapters/ALADIN/ALADIN.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Assessment" href="Assessments/Assessment.html" />
+    <link rel="next" title="Task" href="Tasks/Task.html" />
     <link rel="prev" title="Glossary" href="../Intro/Glossary.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -166,12 +166,12 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">ALADIN</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Assessments/Assessment.html">Assessment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Assessments/AssessmentTypes.html">Assessment Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tasks/Task.html">Task</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tasks/TaskTypes.html">Task Type</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">CARPET</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../CARPET/CARPET.html">CARPeT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CARPET/CARPET.html">CARPET</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">DJINN</span></p>
 <ul class="nav bd-sidenav">
@@ -478,7 +478,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assessment-generator">Assessment Generator</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-data-generator">Task Data Generator</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#execution-plan">Execution Plan</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#custom-nodes">Custom Nodes</a></li>
 </ul>
@@ -496,17 +496,17 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="overview">
 <h1>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h1>
-<p>ALADIN (<span class="xref myst"><strong>A</strong>ssessment</span> and so<strong>l</strong>ution(-hint)s gener<strong>a</strong>tion framework in the fiel<strong>d</strong> of <strong>I</strong>nformatics and adjacent discipli<strong>n</strong>es) is a framework for declaratively defining and generating assessments and solutions for them. It was originally thought to be used in the context of computer science education, but is designed in a way that makes it independent of the subject matter domain.</p>
+<p>ALADIN (<span class="xref myst">T<strong>a</strong>sk</span> and so<strong>l</strong>ution(-hint)s gener<strong>a</strong>tion framework in the fiel<strong>d</strong> of <strong>I</strong>nformatics and adjacent discipli<strong>n</strong>es) is a framework for declaratively defining and generating tasks, solutions and solution-hints for them. It was originally thought to be used in the context of computer science education, but is designed in a way that makes it independent of the subject matter domain.</p>
 <figure class="align-center" id="aladin-overview">
-<a class="reference internal image-reference" href="../../_images/assessment_generator.jpg"><img alt="../../_images/assessment_generator.jpg" src="../../_images/assessment_generator.jpg" style="width: 1206.0px; height: 783.0px;" /></a>
+<a class="reference internal image-reference" href="_static/images/task_generator.jpg"><img alt="_static/images/task_generator.jpg" src="_static/images/task_generator.jpg" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Configuration of the Assessment Generator</span><a class="headerlink" href="#aladin-overview" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Configuration of the Task Generator</span><a class="headerlink" href="#aladin-overview" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<section id="assessment-generator">
-<h2>Assessment Generator<a class="headerlink" href="#assessment-generator" title="Permalink to this heading">#</a></h2>
-<p>The Assessment Generator is a function, that can be thought of as an execution engine and takes in a configuration in the form of a directed graph of individual Assessment Generation functions to produce an Assessment according to that plan. Think SQL query plans, but for educational Assessment Generation<sup><span class="xref myst">1</span></sup>. A distinct configuration of multiple Assessment Generation functions is called an <span class="xref myst">Assessment Type</span>.</p>
-<p>The Assessment Generator is the core of the ALADIN framework and is responsible for generating Assessment Instances of a given Assessment Type and their respective solutions and hints.</p>
+<section id="task-data-generator">
+<h2>Task Data Generator<a class="headerlink" href="#task-data-generator" title="Permalink to this heading">#</a></h2>
+<p>The Task Data Generator is a function, that can be thought of as an execution engine and takes in a configuration in the form of a directed graph of individual Task Generation functions to produce Task Data according to that plan. Think SQL query plans, but for educational Task Data Generation<sup><span class="xref myst">1</span></sup>. A distinct configuration of multiple Task Generation functions is called an <span class="xref myst">Task Type</span>.</p>
+<p>The Task Data Generator is the core of the ALADIN framework and is responsible for generating Task Instances of a given Task Type and their respective solutions and hints.</p>
 <section id="execution-plan">
 <h3>Execution Plan<a class="headerlink" href="#execution-plan" title="Permalink to this heading">#</a></h3>
 <p>An execution plan can be thought of as a multistep computer program, which produces the desired output. In an execution plan, each node represents a computational operation or function and each edge represents the data flow between the nodes. The output of one node always acts as the input of another, where the last output in the data flow always produces the result of the execution plan.</p>
@@ -557,7 +557,10 @@ document.write(`
               
               
                 <footer class="bd-footer-article">
-                  <!-- Previous / next buttons -->
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="../Intro/Glossary.html"
@@ -569,15 +572,18 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="Assessments/Assessment.html"
+       href="Tasks/Task.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Assessment</p>
+        <p class="prev-next-title">Task</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
+</div></div>
+  
 </div>
+
                 </footer>
               
             </div>
@@ -592,7 +598,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assessment-generator">Assessment Generator</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-data-generator">Task Data Generator</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#execution-plan">Execution Plan</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#custom-nodes">Custom Nodes</a></li>
 </ul>
@@ -605,7 +611,7 @@ document.write(`
             
           </div>
           <footer class="bd-footer-content">
-            <div class="bd-footer-content__inner">
+            
 <div class="bd-footer-content__inner container">
   
   <div class="footer-item">
@@ -628,7 +634,7 @@ By Paul Christ
     
   </div>
   
-</div></div>
+</div>
           </footer>
         
 
@@ -637,8 +643,8 @@ By Paul Christ
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
   </footer>

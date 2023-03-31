@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>CARPeT &#8212; ALADIN Docs</title>
+    <title>CARPET &#8212; ALADIN Docs</title>
   
   
   
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -39,8 +39,8 @@
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -73,7 +73,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="DJINN" href="../DJINN/DJINN.html" />
-    <link rel="prev" title="Assessment Type" href="../ALADIN/Assessments/AssessmentTypes.html" />
+    <link rel="prev" title="Task Type" href="../ALADIN/Tasks/TaskTypes.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -166,12 +166,12 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">ALADIN</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../ALADIN/ALADIN.html">Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../ALADIN/Assessments/Assessment.html">Assessment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../ALADIN/Assessments/AssessmentTypes.html">Assessment Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ALADIN/Tasks/Task.html">Task</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ALADIN/Tasks/TaskTypes.html">Task Type</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">CARPET</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">CARPeT</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">CARPET</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">DJINN</span></p>
 <ul class="nav bd-sidenav">
@@ -455,7 +455,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -466,11 +468,22 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>CARPeT</h1>
+    <h1>CARPET</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assessment">Assessment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assessment-runtime">Assessment Runtime</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assessment-instruction-design">Assessment Instruction|Design</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assessment-item">Assessment Item</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -481,10 +494,24 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="carpet">
-<h1>CARPeT<a class="headerlink" href="#carpet" title="Permalink to this heading">#</a></h1>
-<p>Graphical Assessment Interpretation Engine and Solution Attempt Tracker
-graphiCal Assessment interPretation engine and solution attemPt Tracker</p>
-<p>learning analytics</p>
+<h1>CARPET<a class="headerlink" href="#carpet" title="Permalink to this heading">#</a></h1>
+<p>CARPET (Graphi<strong>c</strong>al <strong>A</strong>ssessment Inte<strong>rp</strong>retation <strong>E</strong>ngine and Solution Attempt <strong>T</strong>racker)</p>
+<section id="assessment">
+<h2>Assessment<a class="headerlink" href="#assessment" title="Permalink to this heading">#</a></h2>
+<p>An Assessment comprises of an Assessment Design or Assessment Instruction and a Task Data Generator.</p>
+</section>
+<section id="assessment-runtime">
+<h2>Assessment Runtime<a class="headerlink" href="#assessment-runtime" title="Permalink to this heading">#</a></h2>
+<p>The Assessment Runtime is the runtime environment of the Assessment Design. It is responsible for the execution of the Assessment Design and the recording of the solution attempt.</p>
+</section>
+<section id="assessment-instruction-design">
+<h2>Assessment Instruction|Design<a class="headerlink" href="#assessment-instruction-design" title="Permalink to this heading">#</a></h2>
+<p>An Assessment Design</p>
+</section>
+<section id="assessment-item">
+<h2>Assessment Item<a class="headerlink" href="#assessment-item" title="Permalink to this heading">#</a></h2>
+<p>An Assessment Item is a UI-component that encapsulates any Assessment funcion, e.g. Task Data representation or Task Functionality.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -519,15 +546,18 @@ graphiCal Assessment interPretation engine and solution attemPt Tracker</p>
               
               
                 <footer class="bd-footer-article">
-                  <!-- Previous / next buttons -->
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../ALADIN/Assessments/AssessmentTypes.html"
+       href="../ALADIN/Tasks/TaskTypes.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Assessment Type</p>
+        <p class="prev-next-title">Task Type</p>
       </div>
     </a>
     <a class="right-next"
@@ -539,17 +569,37 @@ graphiCal Assessment interPretation engine and solution attemPt Tracker</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
+</div></div>
+  
 </div>
+
                 </footer>
               
             </div>
             
             
               
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assessment">Assessment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assessment-runtime">Assessment Runtime</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assessment-instruction-design">Assessment Instruction|Design</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assessment-item">Assessment Item</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
             
           </div>
           <footer class="bd-footer-content">
-            <div class="bd-footer-content__inner">
+            
 <div class="bd-footer-content__inner container">
   
   <div class="footer-item">
@@ -572,7 +622,7 @@ By Paul Christ
     
   </div>
   
-</div></div>
+</div>
           </footer>
         
 
@@ -581,8 +631,8 @@ By Paul Christ
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
   </footer>

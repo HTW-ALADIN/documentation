@@ -13,6 +13,10 @@ kernelspec:
 
 # Glossary
 
+## 4R-Principle
+
+Record, Redirect, Replay, Resume
+
 ## ALADIN
 
 ## Assessment
@@ -29,6 +33,4 @@ kernelspec:
 
 Javascript Object Notation
 
-## 4R-Principle
-
-Record, Redirect, Replay, Resume
+## Task

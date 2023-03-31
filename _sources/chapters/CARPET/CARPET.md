@@ -11,9 +11,22 @@ kernelspec:
   name: python3
 ---
 
-# CARPeT
+# CARPET
 
-Graphical Assessment Interpretation Engine and Solution Attempt Tracker
-graphiCal Assessment interPretation engine and solution attemPt Tracker
+CARPET (Graphi**c**al **A**ssessment Inte**rp**retation **E**ngine and Solution Attempt **T**racker)
 
-learning analytics
+## Assessment
+
+An Assessment comprises of an Assessment Design or Assessment Instruction and a Task Data Generator.
+
+## Assessment Runtime
+
+The Assessment Runtime is the runtime environment of the Assessment Design. It is responsible for the execution of the Assessment Design and the recording of the solution attempt.
+
+## Assessment Instruction|Design
+
+An Assessment Design
+
+## Assessment Item
+
+An Assessment Item is a UI-component that encapsulates any Assessment funcion, e.g. Task Data representation or Task Functionality.
