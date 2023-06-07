@@ -38,6 +38,10 @@ http {
         location /docs {
             proxy_pass https://htw-aladin.github.io/documentation;
         }
+        location /file/ {
+            alias /var/sharedDocuments/file/;
+            add_header Content-disposition "attachment";
+        }
         location / {
             proxy_pass http://localhost:8000;
             proxy_http_version 1.1;
