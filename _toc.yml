@@ -10,8 +10,11 @@ parts:
   - caption: ALADIN
     chapters:
       - file: chapters/ALADIN/ALADIN
-      - file: chapters/ALADIN/Tasks/Task
-      - file: chapters/ALADIN/Tasks/TaskTypes
+      - sections:
+          - file: chapters/Architecture/Nginx.md
+      - sections:
+          - file: chapters/ALADIN/Tasks/Task
+          - file: chapters/ALADIN/Tasks/TaskTypes
   - caption: CARPET
     chapters:
       - file: chapters/CARPET/CARPET
