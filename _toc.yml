@@ -10,7 +10,7 @@ parts:
   - caption: ALADIN
     chapters:
       - file: chapters/ALADIN/ALADIN
-      - file: chapters/Architecture/Architecture
+      - file: chapters/ALADIN/Architecture/Architecture
         sections:
           - file: chapters/ALADIN/Architecture/Nginx
       - file: chapters/ALADIN/Tasks/Task
@@ -19,6 +19,9 @@ parts:
   - caption: CARPET
     chapters:
       - file: chapters/CARPET/CARPET
+      - file: chapters/CARPET/LTI/LTI
+        sections:
+          - file: chapters/CARPET/LTI/OPAL
   - caption: DJINN
     chapters:
       - file: chapters/DJINN/DJINN
