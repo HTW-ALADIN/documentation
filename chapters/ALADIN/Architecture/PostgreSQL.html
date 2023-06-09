@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>NGINX &#8212; ALADIN Docs</title>
+    <title>PostgreSQL &#8212; ALADIN Docs</title>
   
   
   
@@ -66,12 +66,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/ALADIN/Architecture/Nginx';</script>
-    <link rel="canonical" href="https://HTW-ALADIN.github.io/documentation/chapters/ALADIN/Architecture/Nginx.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/ALADIN/Architecture/PostgreSQL';</script>
+    <link rel="canonical" href="https://HTW-ALADIN.github.io/documentation/chapters/ALADIN/Architecture/PostgreSQL.html" />
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Task" href="../Tasks/Task.html" />
-    <link rel="prev" title="Architecture" href="Architecture.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -162,10 +160,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../../Intro/Glossary.html">Glossary</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">ALADIN</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../ALADIN.html">Overview</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="Architecture.html">Architecture</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">NGINX</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Architecture.html">Architecture</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Nginx.html">NGINX</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Tasks/Task.html">Task</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -263,7 +261,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/HTW-ALADIN/documentation/edit/source/chapters/ALADIN/Architecture/Nginx.md" target="_blank"
+      <li><a href="https://github.com/HTW-ALADIN/documentation/edit/source/chapters/ALADIN/Architecture/PostgreSQL.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -280,7 +278,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/HTW-ALADIN/documentation/issues/new?title=Issue%20on%20page%20%2Fchapters/ALADIN/Architecture/Nginx.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/HTW-ALADIN/documentation/issues/new?title=Issue%20on%20page%20%2Fchapters/ALADIN/Architecture/PostgreSQL.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -310,7 +308,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../../_sources/chapters/ALADIN/Architecture/Nginx.md" target="_blank"
+      <li><a href="../../../_sources/chapters/ALADIN/Architecture/PostgreSQL.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -392,7 +390,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>NGINX</h1>
+    <h1>PostgreSQL</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -402,16 +400,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">Setup</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-nginx">Install NGINX</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-ssl">Configure SSL</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#final-nginx-configuration">Final NGINX configuration</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#test-configuration">Test configuration</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Test configuration</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reload-nginx-after-configuration-changes">Reload NGINX after configuration changes</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#test-configuration-and-reload-nginx">Test configuration and reload NGINX</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#admin-authentication-method">Admin authentication method</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#restart-postgresql">Restart PostgreSQL</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#database-dumps">Database dumps</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-the-task-db">Create the <code class="docutils literal notranslate"><span class="pre">task_db</span></code>.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-user">Create user</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grant-privileges">Grant privileges</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imdb">IMDB</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#to-restore-a-dump-execute">To restore a dump execute</a></li>
 </ul>
 </li>
 </ul>
@@ -425,98 +424,85 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="nginx">
-<h1>NGINX<a class="headerlink" href="#nginx" title="Permalink to this heading">#</a></h1>
-<p>ALADIN uses NGINX:</p>
-<ul class="simple">
-<li><p>as a reverse proxy:</p>
-<ul>
-<li><p>to serve the CARPET frontend,</p></li>
-<li><p>the documentation and</p></li>
-<li><p>provide file sharing.</p></li>
-</ul>
-</li>
-</ul>
-<section id="setup">
-<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this heading">#</a></h2>
-<section id="install-nginx">
-<h3>Install NGINX<a class="headerlink" href="#install-nginx" title="Permalink to this heading">#</a></h3>
-<p>Utilize either the <a class="reference external" href="https://hub.docker.com/_/nginx">official NGINX Docker image</a> or a bare metal installation - reference the <a class="reference external" href="https://www.nginx.com/resources/wiki/start/topics/tutorials/install/">tutorial</a> required for your OS.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="postgresql">
+<h1>PostgreSQL<a class="headerlink" href="#postgresql" title="Permalink to this heading">#</a></h1>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">#</a></h2>
+<p>Install PostgreSQL on your system, with either the docker container or a bare metal installation.</p>
 </section>
-<section id="configure-ssl">
-<h3>Configure SSL<a class="headerlink" href="#configure-ssl" title="Permalink to this heading">#</a></h3>
-<p>To setup SSL, follow the <a class="reference external" href="https://www.nginx.com/blog/using-free-ssltls-certificates-from-lets-encrypt-with-nginx/">tutorial</a> provided by NGINX. The SSL-certificate is provided free of charfe by <a class="reference external" href="https://letsencrypt.org/">Let’s Encrypt</a>. By utilizing certbot, the issued certificate can be renewed automatically.</p>
-</section>
-<section id="final-nginx-configuration">
-<h3>Final NGINX configuration<a class="headerlink" href="#final-nginx-configuration" title="Permalink to this heading">#</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>events {
-  worker_connections  4096;  ## Default: 1024
-}
-http {
-    server {
-        root /var/www/html;
-        server_name aladin.htw-dresden.de;
-
-        listen [::]:443 ssl ipv6only=on; # managed by Certbot
-        listen 443 ssl; # managed by Certbot
-        ssl_certificate /etc/letsencrypt/live/aladin.htw-dresden.de/fullchain.pem; # managed by Certbot
-        ssl_certificate_key /etc/letsencrypt/live/aladin.htw-dresden.de/privkey.pem; # managed by Certbot
-        include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
-        ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
-
-        location /docs {
-            proxy_pass https://htw-aladin.github.io/documentation;
-        }
-        location /file/ {
-            alias /var/sharedDocuments/file/;
-            add_header Content-disposition &quot;attachment&quot;;
-        }
-        location / {
-            proxy_pass http://localhost:8000;
-            proxy_http_version 1.1;
-            proxy_set_header Upgrade $http_upgrade;
-            proxy_set_header Connection &#39;upgrade&#39;;
-            proxy_set_header Host $host;
-            proxy_cache_bypass $http_upgrade;
-        }
-    }
-
-    server {
-        if ($host = aladin.htw-dresden.de) {
-            return 301 https://$host$request_uri;
-        } # managed by Certbot
-
-        listen 80 default_server;
-        listen [::]:80 default_server;
-
-        server_name aladin.htw-dresden.de;
-        return 404; # managed by Certbot
-   }
-}
+<section id="admin-authentication-method">
+<h2>Admin authentication method<a class="headerlink" href="#admin-authentication-method" title="Permalink to this heading">#</a></h2>
+<p>In the file <code class="docutils literal notranslate"><span class="pre">pg_hba.conf</span></code>, usually found in <code class="docutils literal notranslate"><span class="pre">/etc/postgresql/9.1/main/pg_hba.conf</span></code>, change</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">local</span>   <span class="nb">all</span>             <span class="n">postgres</span>                                <span class="n">peer</span>
+</pre></div>
+</div>
+<p>to</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">local</span>   <span class="nb">all</span>             <span class="nb">all</span>                                <span class="n">md5</span>
+</pre></div>
+</div>
+<section id="restart-postgresql">
+<h3>Restart PostgreSQL<a class="headerlink" href="#restart-postgresql" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">service</span> <span class="n">postgresql</span> <span class="n">restart</span>
 </pre></div>
 </div>
 </section>
-<section id="test-configuration">
-<h3>Test configuration<a class="headerlink" href="#test-configuration" title="Permalink to this heading">#</a></h3>
-<p>To test the NGINX configuration use the following commands (assuming a Linux environment):</p>
-<section id="id1">
-<h4>Test configuration<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h4>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">nginx</span> <span class="o">-</span><span class="n">t</span>
+</section>
+<section id="database-dumps">
+<h2>Database dumps<a class="headerlink" href="#database-dumps" title="Permalink to this heading">#</a></h2>
+<p>SQL-Tasks require a populated database.</p>
+<section id="create-the-task-db">
+<h3>Create the <code class="docutils literal notranslate"><span class="pre">task_db</span></code>.<a class="headerlink" href="#create-the-task-db" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CREATE</span> <span class="n">DATABASE</span> <span class="n">task_db</span><span class="p">;</span>
 </pre></div>
 </div>
 </section>
-<section id="reload-nginx-after-configuration-changes">
-<h4>Reload NGINX after configuration changes<a class="headerlink" href="#reload-nginx-after-configuration-changes" title="Permalink to this heading">#</a></h4>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">service</span> <span class="n">nginx</span> <span class="n">reload</span>
+<section id="create-user">
+<h3>Create user<a class="headerlink" href="#create-user" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CREATE</span> <span class="n">USER</span> <span class="n">my_username</span> <span class="n">WITH</span> <span class="n">PASSWORD</span> <span class="s1">&#39;my_password&#39;</span><span class="p">;</span>
 </pre></div>
 </div>
 </section>
-<section id="test-configuration-and-reload-nginx">
-<h4>Test configuration and reload NGINX<a class="headerlink" href="#test-configuration-and-reload-nginx" title="Permalink to this heading">#</a></h4>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">nginx</span> <span class="o">-</span><span class="n">t</span> <span class="o">&amp;&amp;</span> <span class="n">sudo</span> <span class="n">service</span> <span class="n">nginx</span> <span class="n">reload</span>
+<section id="grant-privileges">
+<h3>Grant privileges<a class="headerlink" href="#grant-privileges" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">GRANT</span> <span class="n">ALL</span> <span class="n">PRIVILEGES</span> <span class="n">ON</span> <span class="n">DATABASE</span> <span class="s2">&quot;task_db&quot;</span> <span class="n">to</span> <span class="n">my_username</span><span class="p">;</span>
 </pre></div>
 </div>
+<p>The SemanticSQL-Task requires the manipulated imdb-database.
+The SQL-Task requires the northwind-database.</p>
+<p>The dumps can be downloaded from the following links:</p>
 </section>
+<section id="imdb">
+<h3>IMDB<a class="headerlink" href="#imdb" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://aladin.htw-dresden.de/file/db_files/imdb/attributes.tsv">attibutes</a>
+<a class="reference external" href="https://aladin.htw-dresden.de/file/db_files/imdb/names.tsv">names</a>
+<a class="reference external" href="https://aladin.htw-dresden.de/file/db_files/imdb/professions.tsv">professions</a>
+<a class="reference external" href="https://aladin.htw-dresden.de/file/db_files/imdb/title.tsv">title</a>
+<a class="reference external" href="https://aladin.htw-dresden.de/file/db_files/imdb/characters.tsv">characters</a>
+<a class="reference external" href="https://aladin.htw-dresden.de/file/db_files/imdb/person_profession.tsv">person_profession</a>
+<a class="reference external" href="https://aladin.htw-dresden.de/file/db_files/imdb/regions.tsv">regions</a>
+<a class="reference external" href="https://aladin.htw-dresden.de/file/db_files/imdb/title__.tsv">title__</a>
+<a class="reference external" href="https://aladin.htw-dresden.de/file/db_files/imdb/formats.tsv">formats</a>
+<a class="reference external" href="https://aladin.htw-dresden.de/file/db_files/imdb/languages.tsv">languages</a>
+<a class="reference external" href="https://aladin.htw-dresden.de/file/db_files/imdb/person_title.tsv">person_title</a>
+<a class="reference external" href="https://aladin.htw-dresden.de/file/db_files/imdb/title_genre.tsv">title_genre</a>
+<a class="reference external" href="https://aladin.htw-dresden.de/file/db_files/imdb/types.tsv">types</a>
+<a class="reference external" href="https://aladin.htw-dresden.de/file/db_files/imdb/genres.tsv">genres</a>
+<a class="reference external" href="https://aladin.htw-dresden.de/file/db_files/imdb/localization.tsv">localization</a>
+<a class="reference external" href="https://aladin.htw-dresden.de/file/db_files/imdb/person.tsv">person</a>
+<a class="reference external" href="https://aladin.htw-dresden.de/file/db_files/imdb/title_names.tsv">title_names</a>
+<a class="reference external" href="https://aladin.htw-dresden.de/file/db_files/imdb/years.tsv">years</a></p>
+</section>
+<section id="to-restore-a-dump-execute">
+<h3>To restore a dump execute<a class="headerlink" href="#to-restore-a-dump-execute" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">psql</span> <span class="o">-</span><span class="n">U</span> <span class="n">my_username</span> <span class="o">-</span><span class="n">d</span> <span class="n">task_db</span>
+
+<span class="nb">set</span> <span class="n">search_path</span> <span class="n">to</span> <span class="s2">&quot;imdb2&quot;</span><span class="p">;</span>
+\<span class="n">i</span> <span class="n">imdb</span><span class="o">.</span><span class="n">sql</span>
+
+<span class="nb">set</span> <span class="n">search_path</span> <span class="n">to</span> <span class="s2">&quot;northwind&quot;</span><span class="p">;</span>
+\<span class="n">i</span> <span class="n">northwind</span><span class="o">.</span><span class="n">sql</span>
+</pre></div>
+</div>
 </section>
 </section>
 </section>
@@ -558,24 +544,6 @@ http {
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="Architecture.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Architecture</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="../Tasks/Task.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Task</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div></div>
   
 </div>
@@ -594,16 +562,17 @@ http {
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">Setup</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-nginx">Install NGINX</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-ssl">Configure SSL</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#final-nginx-configuration">Final NGINX configuration</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#test-configuration">Test configuration</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Test configuration</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reload-nginx-after-configuration-changes">Reload NGINX after configuration changes</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#test-configuration-and-reload-nginx">Test configuration and reload NGINX</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#admin-authentication-method">Admin authentication method</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#restart-postgresql">Restart PostgreSQL</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#database-dumps">Database dumps</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-the-task-db">Create the <code class="docutils literal notranslate"><span class="pre">task_db</span></code>.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-user">Create user</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grant-privileges">Grant privileges</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imdb">IMDB</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#to-restore-a-dump-execute">To restore a dump execute</a></li>
 </ul>
 </li>
 </ul>
