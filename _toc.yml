@@ -13,6 +13,7 @@ parts:
       - file: chapters/ALADIN/Architecture/Architecture
         sections:
           - file: chapters/ALADIN/Architecture/Nginx
+          - file: chapters/ALADIN/Architecture/PostgreSQL
       - file: chapters/ALADIN/Tasks/Task
         sections:
           - file: chapters/ALADIN/Tasks/TaskTypes
