@@ -51,26 +51,30 @@ The SQL-Task requires the northwind-database.
 
 The dumps can be downloaded from the following links:
 
+### Northwind
+
+- [attibutes](https://aladin.htw-dresden.de/file/db_files/northwind/northwind.tsv)
+
 ### IMDB
 
-[attibutes](https://aladin.htw-dresden.de/file/db_files/imdb/attributes.tsv)
-[names](https://aladin.htw-dresden.de/file/db_files/imdb/names.tsv)
-[professions](https://aladin.htw-dresden.de/file/db_files/imdb/professions.tsv)
-[title](https://aladin.htw-dresden.de/file/db_files/imdb/title.tsv)
-[characters](https://aladin.htw-dresden.de/file/db_files/imdb/characters.tsv)
-[person_profession](https://aladin.htw-dresden.de/file/db_files/imdb/person_profession.tsv)
-[regions](https://aladin.htw-dresden.de/file/db_files/imdb/regions.tsv)
-[title\_\_](https://aladin.htw-dresden.de/file/db_files/imdb/title__.tsv)
-[formats](https://aladin.htw-dresden.de/file/db_files/imdb/formats.tsv)
-[languages](https://aladin.htw-dresden.de/file/db_files/imdb/languages.tsv)
-[person_title](https://aladin.htw-dresden.de/file/db_files/imdb/person_title.tsv)
-[title_genre](https://aladin.htw-dresden.de/file/db_files/imdb/title_genre.tsv)
-[types](https://aladin.htw-dresden.de/file/db_files/imdb/types.tsv)
-[genres](https://aladin.htw-dresden.de/file/db_files/imdb/genres.tsv)
-[localization](https://aladin.htw-dresden.de/file/db_files/imdb/localization.tsv)
-[person](https://aladin.htw-dresden.de/file/db_files/imdb/person.tsv)
-[title_names](https://aladin.htw-dresden.de/file/db_files/imdb/title_names.tsv)
-[years](https://aladin.htw-dresden.de/file/db_files/imdb/years.tsv)
+- [attibutes](https://aladin.htw-dresden.de/file/db_files/imdb/attributes.tsv)
+- [names](https://aladin.htw-dresden.de/file/db_files/imdb/names.tsv)
+- [professions](https://aladin.htw-dresden.de/file/db_files/imdb/professions.tsv)
+- [title](https://aladin.htw-dresden.de/file/db_files/imdb/title.tsv)
+- [characters](https://aladin.htw-dresden.de/file/db_files/imdb/characters.tsv)
+- [person_profession](https://aladin.htw-dresden.de/file/db_files/imdb/person_profession.tsv)
+- [regions](https://aladin.htw-dresden.de/file/db_files/imdb/regions.tsv)
+- [title\_\_](https://aladin.htw-dresden.de/file/db_files/imdb/title__.tsv)
+- [formats](https://aladin.htw-dresden.de/file/db_files/imdb/formats.tsv)
+- [languages](https://aladin.htw-dresden.de/file/db_files/imdb/languages.tsv)
+- [person_title](https://aladin.htw-dresden.de/file/db_files/imdb/person_title.tsv)
+- [title_genre](https://aladin.htw-dresden.de/file/db_files/imdb/title_genre.tsv)
+- [types](https://aladin.htw-dresden.de/file/db_files/imdb/types.tsv)
+- [genres](https://aladin.htw-dresden.de/file/db_files/imdb/genres.tsv)
+- [localization](https://aladin.htw-dresden.de/file/db_files/imdb/localization.tsv)
+- [person](https://aladin.htw-dresden.de/file/db_files/imdb/person.tsv)
+- [title_names](https://aladin.htw-dresden.de/file/db_files/imdb/title_names.tsv)
+- [years](https://aladin.htw-dresden.de/file/db_files/imdb/years.tsv)
 
 ### To restore a dump execute
 
