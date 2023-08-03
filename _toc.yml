@@ -20,6 +20,11 @@ parts:
   - caption: CARPET
     chapters:
       - file: chapters/CARPET/CARPET
+      - file: chapters/CARPET/Configuration/Configuration
+        sections:
+          - file: chapters/CARPET/Configuration/TaskConfiguration
+        sections:
+          - file: chapters/CARPET/Configuration/Components/Matrix
       - file: chapters/CARPET/LTI/LTI
         sections:
           - file: chapters/CARPET/LTI/OPAL
