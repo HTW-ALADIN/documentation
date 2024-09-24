@@ -13,20 +13,7 @@ kernelspec:
 
 # CARPET
 
-CARPET (Graphi**c**al **A**ssessment Inte**rp**retation **E**ngine and Solution Attempt **T**racker)
-
-## Assessment
-
-An Assessment comprises of an Assessment Design or Assessment Instruction and a Task Data Generator.
-
-## Assessment Runtime
-
-The Assessment Runtime is the runtime environment of the Assessment Design. It is responsible for the execution of the Assessment Design and the recording of the solution attempt.
-
-## Assessment Instruction|Design
-
-An Assessment Design
-
-## Assessment Item
-
-An Assessment Item is a UI-component that encapsulates any Assessment funcion, e.g. Task Data representation or Task Functionality.
+CARPET (Graphi**c**al **A**ssessment Inte**rp**retation **E**ngine and Solution Attempt **T**racker) is a framework to support technology-enhanced items (TEI), with specialized interactions for collecting response data. These include interactions and responses beyond traditional selected-response or constructed-response, which are usually implemented according to the [QTI standard](https://www.1edtech.org/standards/qti/index#QTI3).
+QTI is restrictive in terms of the types of interactions that can be implemented, and it is not always easy to implement custom interactions. CARPET is designed to be more flexible and to support a wider range of interactions.
+The flexibility comes at the cost of not being able to directly use QTI-compliant authoring tools. However, CARPET has its own (relatively) lightweight domain specific language (DSL) for defining assessments. An overview can be found ([here](./SerialisedTaskSchema.md)).
+An overview of available items is given in the [carpet-component-library](https://htw-aladin.github.io/LOOM/?path=/docs/introduction--docs).

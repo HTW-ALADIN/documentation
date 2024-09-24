@@ -3,37 +3,36 @@ format: jb-book
 root: chapters/Preface
 
 parts:
-  - caption: Introduction
-    chapters:
-      - file: chapters/Intro/Overview
-      - file: chapters/Intro/Glossary
-  - caption: ALADIN
-    chapters:
-      - file: chapters/ALADIN/ALADIN
-      - file: chapters/ALADIN/Architecture/Architecture
-        sections:
-          - file: chapters/ALADIN/Architecture/Nginx
-          - file: chapters/ALADIN/Architecture/PostgreSQL
-      - file: chapters/ALADIN/Tasks/Task
-        sections:
-          - file: chapters/ALADIN/Tasks/TaskTypes
+  # - caption: Introduction
+  #   chapters:
+  #     - file: chapters/Intro/Overview
+  #     - file: chapters/Intro/Glossary
+  # - caption: ALADIN
+  #   chapters:
+  #     - file: chapters/ALADIN/ALADIN
+  #     - file: chapters/ALADIN/Architecture/Architecture
+  #       sections:
+  #         - file: chapters/ALADIN/Architecture/Nginx
+  #         - file: chapters/ALADIN/Architecture/PostgreSQL
+  #     - file: chapters/ALADIN/Tasks/Task
+  #       sections:
+  #         - file: chapters/ALADIN/Tasks/TaskTypes
   - caption: CARPET
     chapters:
       - file: chapters/CARPET/CARPET
       - file: chapters/CARPET/Configuration/Configuration
         sections:
-          - file: chapters/CARPET/Configuration/TaskConfiguration
-        sections:
-          - file: chapters/CARPET/Configuration/Components/Matrix
-      - file: chapters/CARPET/LTI/LTI
-        sections:
-          - file: chapters/CARPET/LTI/OPAL
-  - caption: DJINN
-    chapters:
-      - file: chapters/DJINN/DJINN
-  - caption: ALADIN Legacy-Build
-    chapters:
-      - file: chapters/ALADIN_legacy/legacy
+          - file: chapters/CARPET/SerialisedTaskSchema.schema
+          # - file: chapters/CARPET/Configuration/TaskConfiguration
+      # - file: chapters/CARPET/LTI/LTI
+      #   sections:
+      #     - file: chapters/CARPET/LTI/OPAL
+  # - caption: DJINN
+  #   chapters:
+  #     - file: chapters/DJINN/DJINN
+  # - caption: ALADIN Legacy-Build
+  #   chapters:
+  #     - file: chapters/ALADIN_legacy/legacy
   - caption: Publications
     chapters:
       - file: chapters/Publications/Publications
