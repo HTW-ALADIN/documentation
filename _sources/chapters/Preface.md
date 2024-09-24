@@ -18,7 +18,3 @@ kernelspec:
 ## Assessment Declaration
 
 [**ALADIN**](./ALADIN/ALADIN.md) provides a layer of abstraction for the declaration of [assessment](./Intro/Glossary.md#assessment) generators via a [domain specific language (DSL)](./Intro/Glossary.md#domain-specific-language-dsl) in a [JSON](./Intro/Glossary.md#json) format. While [**ALADIN**](./ALADIN/ALADIN.md) can be used as a standalone application to generate new [assessments](./Intro/Glossary.md#assessment) of a given [assessment type](./Assessments/AssessmentTypes.md), it also provides its own frontend to allow learners to solve the [assessments](./Intro/Glossary.md#assessment) dynamically, receive solution hints and solutions, as well as record, redirect, replay and resume [(4R-Principle)](./Intro/Glossary.md#4r-principle) their solution attempts in the corresponding frontend application ([**CARPET**](./CARPET/CARPET.md)). The [instructional design](./Intro/Glossary.md#instructional-design) of the [assessment type](./Assessments/AssessmentTypes.md) can also be declared via another [JSON](./Intro/Glossary.md#json)-based [DSL](./Intro/Glossary.md#domain-specific-language-dsl).
-
-## Authoring Tool
-
-To alleviate the complexity of declaring new [assessment types](./Assessments/AssessmentTypes.md) [**DJINN**](./DJINN/DJINN.md) (**D**eclarative **J**oint Authoring Tool for **I**nstructional Desig**n** Modeling and Assessme**n**t Generators).
