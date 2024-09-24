@@ -22,7 +22,7 @@ parts:
       - file: chapters/CARPET/CARPET
       - file: chapters/CARPET/Configuration/Configuration
         sections:
-          - file: chapters/CARPET/SerialisedTaskSchema.schema
+          - file: chapters/CARPET/SerialisedTaskSchema
           # - file: chapters/CARPET/Configuration/TaskConfiguration
       # - file: chapters/CARPET/LTI/LTI
       #   sections:
